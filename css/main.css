@@ -5,8 +5,12 @@ body {
     background-color: #fafafa;
 }
 
-h1 {
+h1, h2, p {
+    padding: 20px;
     color: #333;
+}
+
+h1 {
     text-align: center;
     padding-top: 20px;
 }
@@ -17,8 +21,6 @@ h2 {
 }
 
 p {
-    color: #333;
-    margin: 20px;
     line-height: 1.6;
 }
 
@@ -45,11 +47,12 @@ nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 10px;
 }
 
 nav ul li a {
@@ -60,4 +63,17 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #666;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    h1, h2, p {
+        flex: 1 0 40%; /* flex-grow | flex-shrink | flex-basis */
+        padding: 20px;
+    }
 }
