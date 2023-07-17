@@ -1,7 +1,7 @@
 body {
-    margin: 60px auto;
-    width: 70%;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    margin: 70px auto;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -48,11 +48,11 @@ a:hover {
 
 h1 {
     font-size: 1.7em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.1em;
     color: #333;
 }
