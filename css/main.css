@@ -43,3 +43,14 @@ footer {
     font-size: .8em;
     margin-top: 30px;
 }
+.maroon-hr {
+    border-top: 2px solid maroon;
+}
+.footer-gap {
+    margin-top: 30px;  /* Adjust as necessary */
+}
+.news-thumbnail {
+    width: 60px;  /* Adjust as necessary */
+    height: auto;
+}
+
