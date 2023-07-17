@@ -7,8 +7,28 @@ hr.maroon {
     border-top: 2px solid maroon;
 }
 
-nav a:hover {
+nav {
+    background-color: #f8f9fa;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
     color: maroon;
+}
+
+.navbar-light .navbar-brand {
+    color: #333;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: maroon;
+}
+
+.navbar {
+    border-bottom: 2px solid maroon;
 }
 
 .profile-section {
@@ -30,6 +50,11 @@ nav a:hover {
     object-fit: cover;
 }
 
+.news-section {
+    border-top: 2px solid maroon;
+    padding-top: 20px;
+}
+
 .news-item {
     display: flex;
     align-items: center;
@@ -46,48 +71,15 @@ nav a:hover {
 footer {
     padding: 20px 0;
     text-align: center;
+    border-top: 2px solid maroon;
 }
 
 footer a {
-    color: #333;
+    color: #808080;
     margin: 0 15px;
     font-size: 1.5em;
 }
 
 footer a:hover {
     color: maroon;
-}
-
-/* Added below are the general Bootstrap overrides and your specific design styles */
-
-.container {
-    max-width: 800px;
-}
-
-a, p, li, h1, h2 {
-    color: #333;
-}
-
-a:hover {
-    color: maroon;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #333;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: maroon;
-}
-
-.navbar-light .navbar-brand {
-    color: #333;
-}
-
-.navbar-light .navbar-brand:hover {
-    color: maroon;
-}
-
-.navbar {
-    border-bottom: 2px solid maroon;
 }
