@@ -91,12 +91,6 @@ ul.posts li {
 .news-text {
     flex-grow: 1;
 }
-
-.news-text h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
 .news-text p {
     font-size: 1em;
 }
