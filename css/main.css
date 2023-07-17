@@ -1,85 +1,40 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-}
-
-hr.maroon {
-    border-top: 2px solid maroon;
-}
-
-nav {
-    background-color: #f8f9fa;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #333;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: maroon;
-}
-
-.navbar-light .navbar-brand {
-    color: #333;
-}
-
-.navbar-light .navbar-brand:hover {
-    color: maroon;
-}
-
 .navbar {
-    border-bottom: 2px solid maroon;
+    background-color: #d3d3d3;
+}
+
+.nav-item a:hover {
+    color: #800000;
+}
+
+.maroon {
+    border-top: 2px solid #800000;
 }
 
 .profile-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.profile-text {
-    margin-left: 20px;
-    font-size: 1.2em;
+    margin-top: 50px;
 }
 
 #profile-pic {
+    max-width: 250px;
+}
+
+.profile-text p {
+    font-size: 1rem;
+}
+
+.news-section .news-item .news-thumbnail {
     width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.news-section {
-    border-top: 2px solid maroon;
-    padding-top: 20px;
-}
-
-.news-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.news-thumbnail {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    margin-right: 20px;
 }
 
 footer {
-    padding: 20px 0;
-    text-align: center;
-    border-top: 2px solid maroon;
+    background-color: #d3d3d3;
 }
 
 footer a {
     color: #808080;
-    margin: 0 15px;
-    font-size: 1.5em;
+    margin: 0 1em;
 }
 
 footer a:hover {
-    color: maroon;
+    color: #800000;
 }
