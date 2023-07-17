@@ -16,7 +16,7 @@ nav {
 
 #profile-pic {
     width: 200px;
-    height: 200px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -72,6 +72,8 @@ ul.posts li {
 }
 .news-section {
     margin-top: 60px;
+    border-top: 2px solid maroon;
+    padding-top: 20px;
 }
 
 .news-item {
