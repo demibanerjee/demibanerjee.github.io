@@ -1,112 +1,20 @@
 body {
-    margin: 70px auto;
-    width: 50%;
     font-family: 'Roboto', sans-serif;
-}
-
-nav {
-    border-bottom: 2px solid maroon;
-}
-
-.profile-section {
-    display: flex;
-    align-items: start;
-    gap: 20px;
-}
-#profile-pic {
-    width: 200px
-    height: 170px
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.profile-text {
-    flex-grow: 1;
-}
-
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #999;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h1 {
-    font-size: 1.7em;
-    font-family: 'Roboto', sans-serif;
-}
-
-p {
-    font-size: 1em;
-    line-height: 1.1em;
-    color: #333;
-}
-
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
-}
-.news-section {
-    margin-top: 30px;
-    border-top: 2px solid maroon;
-    padding-top: 10px;
-}
-
-.news-item {
-    display: flex;
-    margin-bottom: 40px;
-}
-
-.news-thumbnail {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-right: 20px;
-}
-
-.news-text {
-    flex-grow: 1;
-}
-.news-text p {
-    font-size: 1em;
 }
 
 .maroon-hr {
     border-top: 2px solid maroon;
 }
 
-@media (max-width: 768px) {
-    /* Styles go here for tablets and mobiles */
-    body {
-        width: 95%;
-        margin: 20px auto;
-    }
+.navbar-light .navbar-nav .nav-link:hover {
+    color: maroon;
+}
 
-    #profile-pic {
-        width: 150px;
-        height: 150px;
-    }
+footer a {
+    color: #333;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: maroon;
 }
