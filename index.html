@@ -1,63 +1,90 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Debasmita Banerjee</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<head>
+    <title>Debasmita Banerjee</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">Welcome</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cv">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/rd">Reading list</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Welcome</a></li>
-	        	<li><a href="/about">Projects</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-			<li><a href="/rd">Reading list</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Demi!</h1>
-			<div class="profile-section">
-				<div class="col-md-4">
-                                <img id="profile-pic" src="/images/avatar.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
-				</div>
-                        <div class="profile-text">
-				<div class="col-md-8">
-				<p>My work primarily revolves around understanding light-matter interactions, particularly in the nonlinear optics regime, and I employ various techniques in integrated photonics </p>
-						<p>  When I'm not in the lab, I can often be found daydreaming, creating artwork with digital or mixed media, or enthusiastically explaining STEM topics to kids. I believe that a curious mind can illuminate the world more than any laser.</p>
-						<p> On this website, you'll find insights into my research and a peek into my life outside the lab. Enjoy your visit!</p><a href="/about">Read more about my life...</a></p> </div>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-			<div class="news-section">
-    <h2>Latest News</h2>
-    <div class="news-item">
-        <img src="/images/thumbs/01.jpg" alt="News Image 1" class="news-thumbnail">
-        <div class="news-text">
+    <hr class="maroon-hr">
+
+    <div class="container">
+        <div class="row align-items-start my-5">
+            <div class="col-md-6">
+                <img src="/images/avatar.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-6">
+                <p> My work primarily revolves around understanding light-matter interactions, particularly in the nonlinear optics regime, and I employ various techniques in integrated photonics
+
+<p>When I'm not in the lab, I can often be found daydreaming, creating artwork with digital or mixed media, or enthusiastically explaining STEM topics to kids. I believe that a curious mind can illuminate the world more than any laser.</p>
+
+<p>On this website, you'll find insights into my research and a peek into my life outside the lab. Enjoy your visit!</p>
+            </div>
+        </div>
+
+        <hr class="maroon-hr">
+
+        <h2 class="mb-4">Latest News</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="/images/thumbs/01.jpg" alt="News Image 1" class="img-fluid">
+        </div>
+        <div class="col-md-8">
             <p>News content for item 1. This is a brief update about what's happening.</p>
         </div>
     </div>
-    <div class="news-item">
-        <img src="/images/thumbs/02.jpg" alt="News Image 2" class="news-thumbnail">
-        <div class="news-text">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="/images/thumbs/02.jpg" alt="News Image 2" class="img-fluid">
+        </div>
+        <div class="col-md-8">
             <p>News content for item 2. Here's another update about recent activities.</p>
         </div>
     </div>
     <!-- More news items can go here -->
-</div>
 
-		<footer>
-    		<ul>
-        		<li><a href="mailto:debasmita.banerjee@ucf.edu">email</a></li>
-        		<li><a href="https://github.com/demibanerjee">github.com/demibanerjee</a></li>
-			</ul>
-		</footer>
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>	
-	</body>
+    </div>
+
+    <hr class="maroon-hr">
+
+    <footer>
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="mailto:debasmita.banerjee@ucf.edu"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/demibanerjee"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
-
-		
