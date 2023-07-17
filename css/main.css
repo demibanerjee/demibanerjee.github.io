@@ -1,20 +1,37 @@
 body {
+    margin: 70px auto;
+    width: 50%;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 nav {
-    margin-bottom: 30px;
+    border-bottom: 2px solid maroon;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.profile-section {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+#profile-pic {
+    width: 200px
+    height: 170px
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-nav ul li {
+.profile-text {
+    flex-grow: 1;
+}
+
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
@@ -30,6 +47,7 @@ a:hover {
 
 h1 {
     font-size: 1.7em;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -41,7 +59,39 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-    margin-top: 60px;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+.news-section {
+    margin-top: 30px;
+    border-top: 2px solid maroon;
+    padding-top: 10px;
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.news-thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.news-text {
+    flex-grow: 1;
+}
+.news-text p {
+    font-size: 1em;
 }
 
 .maroon-hr {
