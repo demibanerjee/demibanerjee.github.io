@@ -97,3 +97,16 @@ ul.posts li {
 .maroon-hr {
     border-top: 2px solid maroon;
 }
+
+@media (max-width: 768px) {
+    /* Styles go here for tablets and mobiles */
+    body {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    #profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
