@@ -1,12 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    padding-top: 80px; /* Height of your navbar */
+    padding-top: 30px; /* Height of your navbar */
 }
 
 .navbar {
     border-bottom: 2px solid #800000;
     background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
@@ -17,12 +20,12 @@ body {
     color: #800000;
 }
 
-.nav-item a {
+.nav-link {
     color: #808080 !important;
 }
 
-.nav-item a:hover {
-    color: #800000;
+.nav-link:hover {
+    color: #800000 !important;
 }
 
 .maroon {
@@ -45,6 +48,10 @@ body {
 
 .news-section .news-item .news-thumbnail {
     width: 150px;
+}
+
+.news-section {
+    margin-bottom: 2em;
 }
 
 footer {
