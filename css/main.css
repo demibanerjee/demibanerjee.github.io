@@ -1,14 +1,12 @@
 body {
     margin: 0;
     padding: 0;
+    padding-top: 80px; /* Height of your navbar */
 }
 
 .navbar {
     border-bottom: 2px solid #800000;
     background-color: #ffffff;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
@@ -34,7 +32,7 @@ body {
 }
 
 .profile-section {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 #profile-pic {
