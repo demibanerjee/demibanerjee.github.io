@@ -2,12 +2,17 @@
     background-color: #d3d3d3;
 }
 
+.nav-item a {
+    color: #808080 !important;
+}
+
 .nav-item a:hover {
     color: #800000;
 }
 
 .maroon {
     border-top: 2px solid #800000;
+    margin: 0;
 }
 
 .profile-section {
@@ -28,6 +33,9 @@
 
 footer {
     background-color: #d3d3d3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a {
