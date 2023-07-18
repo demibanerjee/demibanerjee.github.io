@@ -18,6 +18,14 @@ body {
     color: #800000;
 }
 
+.nav-item a {
+    color: #808080 !important;
+}
+
+.nav-item a:hover {
+    color: #800000;
+}
+
 .profile-section {
     margin-top: 50px;
 }
