@@ -6,6 +6,8 @@ body {
 .navbar {
     border-bottom: 2px solid #800000;
     background-color: #d3d3d3;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
