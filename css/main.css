@@ -1,5 +1,18 @@
+body, .navbar {
+    margin: 0;
+    padding: 0;
+}
+
 .navbar {
     background-color: #d3d3d3;
+}
+
+.navbar-brand {
+    color: #808080 !important;
+}
+
+.navbar-brand:hover {
+    color: #800000 !important;
 }
 
 .nav-item a {
@@ -29,6 +42,10 @@
 
 .news-section .news-item .news-thumbnail {
     width: 150px;
+}
+
+.content {
+    margin-bottom: 0;
 }
 
 footer {
