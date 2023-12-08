@@ -106,4 +106,8 @@ footer a:hover {
 .news-text {
     flex-grow: 1; /* Allow text to take the remaining space */
 }
+#latest-news h2.mb-4 {
+    font-size: 20px; /* Adjust this value as needed */
+    /* Other styling properties if needed */
+}
 
