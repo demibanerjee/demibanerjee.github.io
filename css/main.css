@@ -73,32 +73,30 @@ footer a:hover {
     color: #007bff;
 }
 #latest-news {
-    overflow: hidden;
-    white-space: nowrap;
-    background-color: #003366; /* Deep Blue */
-    color: #f0f0f0; /* Light Grey */
     padding: 20px 0;
 }
 
 .news-container {
     display: flex;
-    animation: scrollNews 20s linear infinite;
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+    gap: 20px; /* Spacing between news items */
 }
 
 .news-item {
-    flex: 0 0 auto; /* Prevents news items from stretching */
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    white-space: normal; /* Allows text to wrap inside news items */
+    background-color: #f0f0f0; /* Light Grey */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    padding: 15px;
+    flex-basis: calc(50% - 20px); /* Adjust width for two items per row, accounting for gap */
+    text-align: center; /* Align content in the center */
+}
+
+.news-item:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
 }
 
 .news-thumbnail {
-    width: 100px; /* Adjust as needed */
-    margin-right: 10px;
-}
-
-@keyframes scrollNews {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+    width: 80px; /* Adjust as needed */
+    margin-bottom: 10px;
 }
