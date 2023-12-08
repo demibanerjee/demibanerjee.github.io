@@ -1,11 +1,13 @@
 body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 20px; /* Height of your navbar */
 }
 
 .navbar {
-    border-bottom: 2px solid #800000;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid #007bff;
     background-color: #ffffff;
 }
 
@@ -14,7 +16,7 @@ body {
 }
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover {
-    color: #800000;
+    color: #007bff;
 }
 
 .nav-link {
@@ -22,14 +24,14 @@ body {
 }
 
 .nav-link:hover {
-    color: #800000 !important;
+    color: #007bff !important;
 }
 
 .nav-item:hover {
-    color: #800000 !important;
+    color: #007bff !important;
 }
 .maroon {
-    border-top: 2px solid #800000;
+    border-top: 2px solid #007bff;
     width: 100%;
     margin: 2em 0;
 }
@@ -55,7 +57,7 @@ body {
 }
 
 footer {
-    border-top: 2px solid #800000;
+    border-top: 2px solid #007bff;
     background-color: #ffffff;
     position: fixed;
     bottom: 0;
@@ -68,5 +70,5 @@ footer a {
 }
 
 footer a:hover {
-    color: #800000;
+    color: #007bff;
 }
