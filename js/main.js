@@ -20,3 +20,13 @@ window.onload = function() {
     initializeModals();
     addHoverEffects();
 };
+
+const newsContainer = document.querySelector('.news-container');
+
+newsContainer.addEventListener('mouseover', () => {
+    newsContainer.style.animationPlayState = 'paused';
+});
+
+newsContainer.addEventListener('mouseout', () => {
+    newsContainer.style.animationPlayState = 'running';
+});
