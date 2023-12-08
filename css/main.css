@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px; /* Height of your navbar */
+}
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid #007bff;
+    background-color: #ffffff;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: #808080;
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.nav-link {
+    color: #808080 !important;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.nav-item:hover {
+    color: #007bff !important;
+}
+.maroon {
+    border-top: 2px solid #007bff;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.profile-section {
+    margin-top: 50px;
+}
+
+#profile-pic {
+    max-width: 250px;
+}
+
+.profile-text p {
+    font-size: 1rem;
+}
+
+.news-section .news-item .news-thumbnail {
+    width: 150px;
+}
+
+.news-section {
+    margin-bottom: 2em;
+}
+
+footer {
+    border-top: 2px solid #007bff;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #808080;
+    margin: 0 1em;
+}
+
+footer a:hover {
+    color: #007bff;
+}
