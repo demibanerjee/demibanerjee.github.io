@@ -83,7 +83,7 @@ footer a:hover {
 }
 
 .news-item {
-    background-color: #f0f0f0; /* Light Grey */
+    background-color: #ffffff; /* Light Grey */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
     padding: 15px;
