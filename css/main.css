@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    100% 100%;
     padding-top: 20px; /* Height of your navbar */
     background-color: #f5f2e9;
 }
@@ -46,19 +47,12 @@ body {
     max-width: 250px;
 }
 
-/* .profile-text {
+.profile-text {
     background-image: url('../images/csvgs/Rectangle 2.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%; /* Ensures the SVG scales with the container */
-    /*background-position: center;
-    padding: 20px; /* Optional padding to keep text from touching the edges */
-/*} */
-.profile-text {
-    background-image: url('../images/csvgs/rect_2.svg');
-    background-repeat: no-repeat;
-    background-size: contain; /* Ensures SVG scales to fit the container */
     background-position: center;
-    padding: 20px;
+    padding: 20px; /* Optional padding to keep text from touching the edges */
 }
 
 .profile-text p {
