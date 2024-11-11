@@ -56,18 +56,17 @@ body {
 
 /* Parent container to hold both SVG and content */
 /* Flex container for side-by-side layout */
-/* Flex container for side-by-side layout */
 .profile-section {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between image and text */
     margin-top: 20px;
 }
 
 /* Profile image styling */
 .profile-image {
     flex: 1;
-    max-width: 250px;
+    max-width: 250px; /* Limit image width */
 }
 
 .profile-image img {
@@ -75,31 +74,42 @@ body {
     height: auto;
 }
 
-/* Parent container for text and SVG */
+/* Parent container to hold SVG and content */
 .parent-container {
-    flex: 2;
     position: relative;
+    flex: 2; /* Control width of text area relative to the image */
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
 }
 
-/* SVG Image styling */
-.svg-image {
+/* SVG background styling */
+.svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    max-height: 300px; /* Adjust as needed to control SVG size */
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure SVG is behind the text */
+}
+
+.svg-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make SVG cover the entire container */
+    opacity: 0.9; /* Optional: Adjust opacity for a subtle background */
 }
 
 /* Content styling */
-.content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 0;
+.content {
+    position: relative; /* Ensure content sits above the SVG */
+    z-index: 1;
 }
 
+.content p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
 
 
 
@@ -177,4 +187,3 @@ footer a:hover {
     font-size: 20px; /* Adjust this value as needed */
     /* Other styling properties if needed */
 }
-
