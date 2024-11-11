@@ -53,6 +53,20 @@ body {
     /*background-position: center;
     padding: 20px; /* Optional padding to keep text from touching the edges */
 /*} */
+.profile-text {
+    position: relative;
+    padding: 20px;
+}
+
+.profile-text .background-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures SVG scales to container width */
+    height: 100%; /* Makes SVG height scale with container */
+    z-index: -1; /* Places SVG behind the text */
+    opacity: 0.2; /* Optional: Adjust opacity if needed */
+}
 
 .profile-text p {
     font-size: 1rem;
