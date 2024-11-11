@@ -78,7 +78,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Make the SVG cover the entire container */
-    opacity: 0.1; /* Optional: Adjust opacity to make the SVG subtle */
+    opacity: 0.9; /* Optional: Adjust opacity to make the SVG subtle */
 }
 
 /* Content styling */
