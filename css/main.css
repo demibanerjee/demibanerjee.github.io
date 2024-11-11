@@ -37,6 +37,7 @@ body {
     margin: 2em 0;
 }
 
+
 .profile-section {
     margin-top: 50px;
 }
@@ -45,6 +46,13 @@ body {
     max-width: 250px;
 }
 
+.profile-text {
+    background-image: url('../images/csvgs/rect_2.svg'); /* Add correct path to your SVG */
+    background-repeat: no-repeat;
+    background-size: contain; /* Adjust this to fit the SVG to the div size */
+    background-position: center;
+    padding: 20px; /* Add padding to avoid text overlapping with SVG edges */
+}
 .profile-text p {
     font-size: 1rem;
 }
