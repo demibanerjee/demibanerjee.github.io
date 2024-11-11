@@ -54,27 +54,12 @@ body {
     padding: 20px; /* Optional padding to keep text from touching the edges */
 /*} */
 .profile-text {
-    position: relative; /* Ensures the text aligns with the SVG background */
+    background-image: url('../images/csvgs/Rectangle 2.svg');
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensures SVG scales to fit the container */
+    background-position: center;
     padding: 20px;
 }
-
-.background-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Places the SVG behind the text */
-    object-fit: cover; /* Makes the SVG cover the entire div while maintaining aspect ratio */
-    opacity: 0.2; /* Optional: Adjust transparency as needed */
-}
-
-.profile-text p {
-    position: relative;
-    z-index: 1; /* Ensures the text is on top of the SVG */
-    margin: 0; /* Adjusts spacing as needed */
-}
-
 
 .profile-text p {
     font-size: 1rem;
