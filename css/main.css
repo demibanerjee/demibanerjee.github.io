@@ -47,7 +47,7 @@ body {
 }
 
 .profile-text {
-    background-image: url('../images/csvgs/Rectangle 2.svg');
+    background-image: url('../images/csvgs/rect_2.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%; /* Ensures the SVG scales with the container */
     background-position: center;
