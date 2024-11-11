@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    100% 100%;
     padding-top: 20px; /* Height of your navbar */
     background-color: #f5f2e9;
 }
@@ -47,12 +48,13 @@ body {
 }
 
 .profile-text {
-    background-image: url('../images/csvgs/rect_2.svg'); /* Add correct path to your SVG */
+    background-image: url('../images/csvgs/Rectangle 2.svg');
     background-repeat: no-repeat;
-    background-size: contain; /* Adjust this to fit the SVG to the div size */
+    background-size: 100% 100%; /* Ensures the SVG scales with the container */
     background-position: center;
-    padding: 20px; /* Add padding to avoid text overlapping with SVG edges */
+    padding: 20px; /* Optional padding to keep text from touching the edges */
 }
+
 .profile-text p {
     font-size: 1rem;
 }
