@@ -3,11 +3,12 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 20px; /* Height of your navbar */
+    background-color: #f5f2e9;
 }
 
 .navbar {
     font-family: 'Roboto', sans-serif;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #6d665a;
     background-color: #f5f2e9;
 }
 
@@ -58,7 +59,7 @@ body {
 
 footer {
     border-top: 2px solid #007bff;
-    background-color: #ffffff;
+    background-color: ##f5f2e9;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -83,7 +84,7 @@ footer a:hover {
 }
 
 .news-item {
-    background-color: #ffffff; /* Light Grey */
+    background-color: #e08d6a; /* Light Grey */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
     padding: 15px;
