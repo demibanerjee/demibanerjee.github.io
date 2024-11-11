@@ -13,11 +13,11 @@ body {
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
-    color: #6d665a;
+    color: #808080;
 }
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover {
-    color: #00664d;
+    color: #007bff;
 }
 
 .nav-link {
@@ -25,14 +25,14 @@ body {
 }
 
 .nav-link:hover {
-    color: #00664d!important;
+    color: #007bff !important;
 }
 
 .nav-item:hover {
-    color:  !important;
+    color: #007bff !important;
 }
 .maroon {
-    border-top: 2px solid #e08d6a;
+    border-top: 2px solid #007bff;
     width: 100%;
     margin: 2em 0;
 }
