@@ -2,7 +2,6 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    100% 100%;
     padding-top: 20px; /* Height of your navbar */
     background-color: #f5f2e9;
 }
@@ -47,13 +46,13 @@ body {
     max-width: 250px;
 }
 
-.profile-text {
+/* .profile-text {
     background-image: url('../images/csvgs/Rectangle 2.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%; /* Ensures the SVG scales with the container */
-    background-position: center;
+    /*background-position: center;
     padding: 20px; /* Optional padding to keep text from touching the edges */
-}
+/*} */
 
 .profile-text p {
     font-size: 1rem;
