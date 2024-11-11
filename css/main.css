@@ -58,11 +58,19 @@ body {
 }
 
 footer {
-    border-top: 2px solid #6d665a;
+    border-top: 2px solid transparent; /* Make the default solid border transparent */
     background-color: #f5f2e9;
     position: fixed;
     bottom: 0;
     width: 100%;
+    border-image: linear-gradient(to right, 
+        red, 
+        orange, 
+        yellow, 
+        green, 
+        blue, 
+        indigo, 
+        violet) 1; /* Apply the rainbow gradient */
 }
 
 footer a {
