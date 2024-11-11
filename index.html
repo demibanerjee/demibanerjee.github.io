@@ -1,99 +1,189 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <title>Debasmita Banerjee</title>
-</head>
-<body>
-<!--     <img src="/images/csvgs/rect_2.svg" alt="Decorative SVG" style="width: 100%;"> -->
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px; /* Height of your navbar */
+    background-color: #f5f2e9;
+}
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="/">Debasmita Banerjee</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/cv">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/rd">Reading list</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid #6d665a;
+    background-color: #f5f2e9;
+}
 
-  <div class="container">
-    <div class="row align-items-start my-5 profile-section">
-        <div class="col-md-6 profile-image">
-            <img id="profile-pic" src="/images/avatar.jpg" alt="Profile Picture" class="img-fluid rounded-circle mx-auto d-block">
-        </div>
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: #6d665a;
+}
 
-        <div class="col-md-6 parent-container">
-            <img src="/images/csvgs/rect_2.svg" alt="Decorative Background" class="svg-image">
-            <div class="content">
-                <p>
-                    My work primarily revolves around understanding light-matter interactions, particularly in the nonlinear optics regime, and I employ various techniques in integrated photonics.
-                    <br>When I'm not in the lab, I can often be found daydreaming, creating artwork with digital or mixed media, or enthusiastically explaining STEM topics to kids. I believe that a curious mind can illuminate the world more than any laser.
-                    <br>On this website, you'll find insights into my research and a peek into my life outside the lab. Enjoy your visit!
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover {
+    color: #00664d;
+}
+
+.nav-link {
+    color: #808080 !important;
+}
+
+.nav-link:hover {
+    color: #00664d!important;
+}
+
+.nav-item:hover {
+    color:  !important;
+}
+.maroon {
+    border-top: 2px solid #e08d6a;
+    width: 100%;
+    margin: 2em 0;
+}
 
 
+.profile-section {
+    margin-top: 50px;
+}
 
-        <hr class="maroon">
+#profile-pic {
+    max-width: 250px;
+}
 
-        <section id="latest-news">
-            <h2 class="mb-4">Latest News</h2>
-            <div class="news-container">
-                <div class="news-item">
-                    <img class="news-thumbnail" src="/images/thumbs/01.jpg" alt="News Image 1">
-                    <div class="news-text">
-                        <p>News content for item 1. This is a brief update about what's happening.</p>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <img class="news-thumbnail" src="/images/thumbs/02.jpg" alt="News Image 2">
-                    <div class="news-text">
-                        <p>News content for item 2. Here's another update about recent activities.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+/* .profile-text {
+    background-image: url('../images/csvgs/rect_2.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Ensures the SVG scales with the container */
+    /*background-position: center;
+    padding: 20px; /* Optional padding to keep text from touching the edges */
+/*} */
 
-    <footer>
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <a href="mailto:debasmita.banerjee@ucf.edu"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/demibanerjee"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/visiondarkdemi19/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/debasmita.banerjee.330"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/demibanerjee/"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+/* Parent container to hold both SVG and content */
+/* Flex container for side-by-side layout */
+.profile-section {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between image and text */
+    margin-top: 20px;
+}
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="/js/main.js"></script>
-</body>
-</html>
+/* Profile image styling */
+.profile-image {
+    flex: 1;
+    max-width: 250px; /* Limit image width */
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Parent container to hold SVG and content */
+.parent-container {
+    position: relative;
+    flex: 2; /* Control width of text area relative to the image */
+    padding: 20px;
+}
+
+/* SVG background styling */
+.svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure SVG is behind the text */
+}
+
+.svg-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make SVG cover the entire container */
+    opacity: 0.9; /* Optional: Adjust opacity for a subtle background */
+}
+
+/* Content styling */
+.content {
+    position: relative; /* Ensure content sits above the SVG */
+    z-index: 1;
+}
+
+.content p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+
+.profile-text p {
+    font-size: 1rem;
+}
+
+.news-section .news-item .news-thumbnail {
+    width: 150px;
+}
+
+.news-section {
+    margin-bottom: 2em;
+}
+
+footer {
+    border-top: 2px solid transparent; /* Make the default solid border transparent */
+    background-color: #f5f2e9;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-image: linear-gradient(to right, 
+        red, 
+        orange, 
+        yellow, 
+        green, 
+        blue, 
+        indigo, 
+        violet) 1; /* Apply the rainbow gradient */
+}
+
+footer a {
+    color: #e08d6a;;
+    margin: 0 1em;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+#latest-news {
+    padding: 20px 0;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Spacing between news items */
+}
+
+.news-item {
+    background-color: #e08d6a; /* Light Grey */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    padding: 15px;
+    display: flex; /* Align image and text side by side */
+    align-items: center; /* Center items vertically */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.news-item:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+.news-thumbnail {
+    width: 100px; /* Adjust as needed */
+    margin-right: 15px;
+    border-radius: 4px; /* Rounded corners for the image */
+}
+
+.news-text {
+    flex-grow: 1; /* Allow text to take the remaining space */
+}
+#latest-news h2.mb-4 {
+    font-size: 20px; /* Adjust this value as needed */
+    /* Other styling properties if needed */
+}
