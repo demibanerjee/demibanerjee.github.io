@@ -54,7 +54,7 @@ body {
     padding: 20px; /* Optional padding to keep text from touching the edges */
 /*} */
 .profile-text {
-    background-image: url('../images/csvgs/Rectangle 2.svg');
+    background-image: url('../images/csvgs/rect_2.svg');
     background-repeat: no-repeat;
     background-size: contain; /* Ensures SVG scales to fit the container */
     background-position: center;
