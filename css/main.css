@@ -55,11 +55,29 @@ body {
 /*} */
 
 /* Parent container to hold both SVG and content */
+/* Flex container for side-by-side layout */
+.profile-section {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between image and text */
+    margin-top: 20px;
+}
+
+/* Profile image styling */
+.profile-image {
+    flex: 1;
+    max-width: 250px; /* Limit image width */
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Parent container to hold SVG and content */
 .parent-container {
     position: relative;
-    width: 100%; 
-    max-width: 800px; /* Set a max-width as needed */
-    margin: 0 auto; /* Center align if needed */
+    flex: 2; /* Control width of text area relative to the image */
     padding: 20px;
 }
 
@@ -71,14 +89,14 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1; /* Ensure it stays behind the text */
+    z-index: -1; /* Ensure SVG is behind the text */
 }
 
 .svg-background img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Make the SVG cover the entire container */
-    opacity: 0.9; /* Optional: Adjust opacity to make the SVG subtle */
+    object-fit: cover; /* Make SVG cover the entire container */
+    opacity: 0.1; /* Optional: Adjust opacity for a subtle background */
 }
 
 /* Content styling */
@@ -88,10 +106,11 @@ body {
 }
 
 .content p {
-    margin: 0; /* Remove margin if not needed */
-    font-size: 1rem; /* Adjust font size as desired */
+    margin: 0;
+    font-size: 1rem;
     line-height: 1.6;
 }
+
 
 
 .profile-text p {
