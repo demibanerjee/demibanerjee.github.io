@@ -1,32 +1,12 @@
-
-// JavaScript for Carousel
-function initializeCarousel() {
-    // Code to initialize a carousel for projects
-}
-
-// JavaScript for Modal Pop-ups
-function initializeModals() {
-    // Code to initialize modals for detailed views
-}
-
-// JavaScript for Hover Effects
-function addHoverEffects() {
-    // Code to add hover effects to certain elements
-}
-
-// Initialize functions on window load
-window.onload = function() {
-    initializeCarousel();
-    initializeModals();
-    addHoverEffects();
-};
-
-const newsContainer = document.querySelector('.news-container');
-
-newsContainer.addEventListener('mouseover', () => {
-    newsContainer.style.animationPlayState = 'paused';
-});
-
-newsContainer.addEventListener('mouseout', () => {
-    newsContainer.style.animationPlayState = 'running';
+// Smooth scroll for in-page navigation
+const navLinks = document.querySelectorAll('header nav a');
+navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+        const targetId = link.getAttribute('href');
+        if (targetId.startsWith('#')) {
+            event.preventDefault();
+            const target = document.querySelector(targetId);
+            target?.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
 });

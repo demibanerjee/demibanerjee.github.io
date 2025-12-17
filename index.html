@@ -1,103 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Debasmita Banerjee | Quantum Optics & AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <title>Debasmita Banerjee</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="/">Debasmita Banerjee</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/cv">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/rd">Reading list</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <header class="top-nav">
+        <div class="brand">Debasmita Banerjee</div>
+        <nav>
+            <a href="#bio">Bio</a>
+            <a href="#cv">CV</a>
+            <a href="#publications">Publications</a>
+            <a href="#linkedin">LinkedIn</a>
+            <a href="#blog">Blog</a>
+        </nav>
+    </header>
 
-    <div class="container">
-        <div class="row align-items-start my-5 profile-section">
-            <div class="col-md-6">
-    <img id="profile-pic" src="/images/avatar.jpg" alt="Profile Picture" class="img-fluid rounded-circle mx-auto d-block">
-</div>
-
-            <div class="parent-container">
-    <div class="svg-background">
-        <img src="/images/csvgs/rect_2.svg" alt="Decorative Background">
-    </div>
-    <div class="content">
-        <p>
-            My work primarily revolves around understanding light-matter interactions, particularly in the nonlinear optics regime, and I employ various techniques in integrated photonics.
-            <br>When I'm not in the lab, I can often be found daydreaming, creating artwork with digital or mixed media, or enthusiastically explaining STEM topics to kids. I believe that a curious mind can illuminate the world more than any laser.
-            <br>On this website, you'll find insights into my research and a peek into my life outside the lab. Enjoy your visit!
-        </p>
-    </div>
-</div>
-
-        </div>
-
-         <hr class="maroon">
-
-      <section id="latest-news">
-    <h2 class="mb-4">Latest News</h2>
-    <div class="news-container">
-        <div class="news-item">
-            <img class="news-thumbnail" src="/images/thumbs/01.jpg" alt="News Image 1">
-            <div class="news-text">
-                <p>News content for item 1. This is a brief update about what's happening.</p>
-            </div>
-        </div>
-        <div class="news-item">
-            <img class="news-thumbnail" src="/images/thumbs/02.jpg" alt="News Image 2">
-            <div class="news-text">
-                <p>News content for item 2. Here's another update about recent activities.</p>
-            </div>
-        </div>
-        <!-- More news items -->
-    </div>
-</section>
-
-
-    </div>
-
-    <!-- <hr class="maroon"> -->
-
-    <footer>
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <a href="mailto:debasmita.banerjee@ucf.edu"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/demibanerjee"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/visiondarkdemi19/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/debasmita.banerjee.330"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/demibanerjee/"><i class="fab fa-linkedin"></i></a>
+    <main>
+        <section class="hero">
+            <div class="hero__text">
+                <p class="eyebrow">Quantum optics · Integrated photonics · AI</p>
+                <h1>Modern science with a human heartbeat.</h1>
+                <p class="lede">
+                    I explore light–matter interactions in the nonlinear regime and build integrated photonics systems
+                    inspired by the elegance of quantum mechanics and the curiosity that fuels AI.
+                </p>
+                <div class="hero__actions">
+                    <a class="button" href="#bio">Start here</a>
+                    <a class="ghost" href="#publications">See publications</a>
                 </div>
             </div>
+            <div class="hero__visual">
+                <div class="profile-card">
+                    <img src="images/avatar.jpg" alt="Portrait of Debasmita Banerjee">
+                    <div class="profile-copy">
+                        <p>
+                            Curious about light, form, and the stories they tell together. Outside the lab you'll find me
+                            experimenting with digital art or mentoring young minds in STEM.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bio" class="section panels">
+            <div class="section__header">
+                <h2>Bio</h2>
+                <p>Resonant research, minimalist craft.</p>
+            </div>
+            <div class="panel-grid">
+                <article class="panel">
+                    <h3>Now</h3>
+                    <p>Exploring nonlinear optics with integrated photonics platforms, modeling how light behaves when it is gently pushed out of equilibrium.</p>
+                </article>
+                <article class="panel">
+                    <h3>Curiosities</h3>
+                    <p>Quantum optics that blurs into AI, human-centric interfaces for complex systems, and art that weaves geometry with color.</p>
+                </article>
+                <article class="panel">
+                    <h3>Elsewhere</h3>
+                    <p>Previously in labs and classrooms sharing the wonder of photonics and STEM, always focused on clarity and delightful design.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="cv" class="section links">
+            <div class="section__header">
+                <h2>CV</h2>
+                <p>Credentials in a clean snapshot.</p>
+            </div>
+            <div class="link-grid">
+                <a class="link-card" href="/cv">
+                    <div class="icon-wrap"><i class="fas fa-file-alt"></i></div>
+                    <div>
+                        <h3>Curriculum Vitae</h3>
+                        <p>Highlights, positions, and projects in one place.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="publications" class="section links">
+            <div class="section__header">
+                <h2>Publications</h2>
+                <p>Selected work in quantum and nonlinear photonics.</p>
+            </div>
+            <div class="link-grid">
+                <a class="link-card" href="/about">
+                    <div class="icon-wrap"><i class="fas fa-project-diagram"></i></div>
+                    <div>
+                        <h3>Research &amp; Papers</h3>
+                        <p>Dive into projects, datasets, and collaborative work.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="linkedin" class="section links">
+            <div class="section__header">
+                <h2>LinkedIn</h2>
+                <p>Connect for collaborations, mentoring, and conversations.</p>
+            </div>
+            <div class="link-grid">
+                <a class="link-card" href="https://www.linkedin.com/in/demibanerjee/">
+                    <div class="icon-wrap"><i class="fab fa-linkedin"></i></div>
+                    <div>
+                        <h3>Visit LinkedIn</h3>
+                        <p>Professional highlights and a glimpse into ongoing work.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="blog" class="section links">
+            <div class="section__header">
+                <h2>Blog</h2>
+                <p>Notes on science, design, and the colorful edges between.</p>
+            </div>
+            <div class="link-grid">
+                <a class="link-card" href="/blog">
+                    <div class="icon-wrap"><i class="fas fa-pen-nib"></i></div>
+                    <div>
+                        <h3>Read the blog</h3>
+                        <p>Short reflections, ideas in progress, and visuals from the lab.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="mailto:debasmita.banerjee@ucf.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/demibanerjee" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/visiondarkdemi19/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/debasmita.banerjee.330" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/demibanerjee/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="footer-note">Crafted with curiosity at the intersection of light and code.</p>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-<script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
