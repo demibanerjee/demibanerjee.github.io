@@ -2,7 +2,10 @@
     --bg: #ffffff;
     --text: #1f1f1f;
     --muted: #4b5563;
-    --accent: #2f8f58;
+
+    
+    --accent: #0a7ca7;
+
     --silver: #e5e7eb;
     --shadow: rgba(0, 0, 0, 0.04);
     --radius: 14px;
@@ -65,13 +68,24 @@ main {
     gap: 32px;
     align-items: center;
     padding: clamp(16px, 4vw, 32px);
+    border: 1px solid #eceff1;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    background: radial-gradient(circle at 20% 25%, rgba(47, 143, 88, 0.12), transparent 36%),
-        radial-gradient(circle at 80% 20%, rgba(149, 160, 168, 0.18), transparent 42%),
-        linear-gradient(145deg, rgba(236, 239, 241, 0.7), rgba(255, 255, 255, 0.94));
+
+    background: radial-gradient(circle at 20% 20%, #f7fafc, #ffffff 45%),
+        linear-gradient(135deg, rgba(229, 231, 235, 0.5), rgba(255, 255, 255, 0.2));
+
     box-shadow: 0 24px 80px -48px var(--shadow), 0 2px 8px -6px var(--shadow);
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    pointer-events: none;
 }
 
 .hero__text h1 {
@@ -118,12 +132,15 @@ main {
 .button {
     background: var(--accent);
     color: #fff;
-    box-shadow: 0 12px 30px -16px rgba(47, 143, 88, 0.5);
+
+    
+    box-shadow: 0 12px 30px -16px rgba(10, 124, 167, 0.6);
+
 }
 
 .button:hover {
     transform: translateY(-1px);
-    box-shadow: 0 14px 32px -14px rgba(47, 143, 88, 0.55);
+    box-shadow: 0 14px 32px -14px rgba(10, 124, 167, 0.7);
 }
 
 .ghost {
@@ -132,7 +149,10 @@ main {
 }
 
 .ghost:hover {
-    background: rgba(47, 143, 88, 0.12);
+
+  
+    background: rgba(10, 124, 167, 0.08);
+
 }
 
 .hero__visual {
@@ -140,42 +160,27 @@ main {
     grid-template-columns: 1fr;
     gap: 16px;
     position: relative;
-    isolation: isolate;
-}
-
-.hero__visual::before {
-    content: '';
-    position: absolute;
-    inset: -12% 0% 6% -6%;
-    background: radial-gradient(circle at 32% 30%, rgba(47, 143, 88, 0.18), transparent 55%),
-        radial-gradient(circle at 70% 70%, rgba(149, 160, 168, 0.2), transparent 65%),
-        radial-gradient(circle at 44% 82%, rgba(64, 88, 71, 0.12), transparent 55%);
-    filter: blur(14px);
-    opacity: 0.8;
-    z-index: 0;
 }
 
 .profile-card {
-    background: linear-gradient(165deg, rgba(236, 239, 241, 0.9), #ffffff);
-    border: 1px solid rgba(149, 160, 168, 0.35);
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
     border-radius: 18px;
     padding: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
-    box-shadow: 0 20px 60px -48px var(--shadow), 0 10px 30px -26px rgba(47, 143, 88, 0.25);
-    position: relative;
-    z-index: 1;
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    gap: 16px;
+    align-items: center;
+    box-shadow: 0 20px 60px -48px var(--shadow);
 }
 
 .profile-card img {
-    width: 104px;
-    height: 104px;
-    border-radius: 20px;
+    width: 96px;
+    height: 96px;
+    border-radius: 18px;
     object-fit: cover;
-    border: 3px solid #ffffff;
-    box-shadow: 0 14px 34px -22px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+    box-shadow: 0 10px 30px -20px rgba(0, 0, 0, 0.2);
 }
 
 .profile-copy p {
@@ -183,6 +188,30 @@ main {
     color: #1f2937;
     line-height: 1.6;
     font-size: 0.95rem;
+}
+
+.stacked-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    width: 100%;
+    min-height: 120px;
+    background: linear-gradient(135deg, #f3f4f6, #edeff3);
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stacked-grid::before,
+.stacked-grid::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+    background-size: 20% 50%, 50% 25%;
+    mix-blend-mode: overlay;
 }
 
 .section {
@@ -252,7 +281,7 @@ main {
     grid-template-columns: 56px 1fr;
     gap: 14px;
     align-items: center;
-    background: linear-gradient(120deg, rgba(47, 143, 88, 0.06), rgba(47, 143, 88, 0.03));
+    background: linear-gradient(120deg, rgba(10, 124, 167, 0.04), rgba(10, 124, 167, 0.02));
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -265,11 +294,11 @@ main {
     width: 56px;
     height: 56px;
     border-radius: 14px;
-    background: #e6f4ec;
+    background: #f0f9ff;
     display: grid;
     place-items: center;
     color: var(--accent);
-    border: 1px solid rgba(47, 143, 88, 0.25);
+    border: 1px solid rgba(10, 124, 167, 0.2);
 }
 
 .link-card h3 {
@@ -324,7 +353,7 @@ footer {
     }
 
     .profile-card {
-        align-items: center;
+        grid-template-columns: 1fr;
         text-align: center;
     }
 
