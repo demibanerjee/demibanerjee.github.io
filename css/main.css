@@ -2,7 +2,7 @@
     --bg: #ffffff;
     --text: #1f1f1f;
     --muted: #4b5563;
-    --accent: #0a7ca7;
+    --accent: #2f8f58;
     --silver: #e5e7eb;
     --shadow: rgba(0, 0, 0, 0.04);
     --radius: 14px;
@@ -127,12 +127,12 @@ main {
 .button {
     background: var(--accent);
     color: #fff;
-    box-shadow: 0 12px 30px -16px rgba(10, 124, 167, 0.6);
+    box-shadow: 0 12px 30px -16px rgba(47, 143, 88, 0.5);
 }
 
 .button:hover {
     transform: translateY(-1px);
-    box-shadow: 0 14px 32px -14px rgba(10, 124, 167, 0.7);
+    box-shadow: 0 14px 32px -14px rgba(47, 143, 88, 0.55);
 }
 
 .ghost {
@@ -141,7 +141,7 @@ main {
 }
 
 .ghost:hover {
-    background: rgba(10, 124, 167, 0.08);
+    background: rgba(47, 143, 88, 0.12);
 }
 
 .hero__visual {
@@ -180,27 +180,34 @@ main {
 }
 
 .stacked-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 8px;
-    width: 100%;
-    min-height: 120px;
-    background: linear-gradient(135deg, #f3f4f6, #edeff3);
-    border: 1px solid #e5e7eb;
-    border-radius: 14px;
     position: relative;
+    width: 100%;
+    min-height: 140px;
+    background: linear-gradient(135deg, #eef1f5, #ffffff);
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
     overflow: hidden;
+    box-shadow: 0 16px 44px -40px var(--shadow);
 }
 
 .stacked-grid::before,
 .stacked-grid::after {
     content: '';
     position: absolute;
-    inset: 0;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px),
-        linear-gradient(180deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
-    background-size: 20% 50%, 50% 25%;
-    mix-blend-mode: overlay;
+    filter: blur(0);
+    opacity: 0.8;
+}
+
+.stacked-grid::before {
+    inset: -10% 30% 10% -20%;
+    background: radial-gradient(circle at 30% 40%, rgba(47, 143, 88, 0.25), transparent 55%),
+        radial-gradient(circle at 80% 70%, rgba(47, 143, 88, 0.12), transparent 60%);
+}
+
+.stacked-grid::after {
+    inset: 20% -10% -10% 30%;
+    background: radial-gradient(circle at 40% 60%, rgba(149, 160, 168, 0.3), transparent 60%),
+        radial-gradient(circle at 70% 30%, rgba(47, 143, 88, 0.15), transparent 55%);
 }
 
 .section {
@@ -270,7 +277,7 @@ main {
     grid-template-columns: 56px 1fr;
     gap: 14px;
     align-items: center;
-    background: linear-gradient(120deg, rgba(10, 124, 167, 0.04), rgba(10, 124, 167, 0.02));
+    background: linear-gradient(120deg, rgba(47, 143, 88, 0.06), rgba(47, 143, 88, 0.03));
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -283,11 +290,11 @@ main {
     width: 56px;
     height: 56px;
     border-radius: 14px;
-    background: #f0f9ff;
+    background: #e6f4ec;
     display: grid;
     place-items: center;
     color: var(--accent);
-    border: 1px solid rgba(10, 124, 167, 0.2);
+    border: 1px solid rgba(47, 143, 88, 0.25);
 }
 
 .link-card h3 {
