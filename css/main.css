@@ -2,6 +2,7 @@
     --bg: #ffffff;
     --text: #1f1f1f;
     --muted: #4b5563;
+    --accent: #2f8f58;
 
     
     --accent: #0a7ca7;
@@ -60,6 +61,19 @@ a:hover {
 
 main {
     padding: clamp(24px, 5vw, 64px);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    align-items: center;
+    padding: clamp(16px, 4vw, 32px);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f7f9fa, #ffffff);
+    box-shadow: 0 24px 80px -48px var(--shadow), 0 2px 8px -8px var(--shadow);
 }
 
 .hero {
@@ -132,6 +146,7 @@ main {
 .button {
     background: var(--accent);
     color: #fff;
+    box-shadow: 0 12px 30px -16px rgba(47, 143, 88, 0.5);
 
     
     box-shadow: 0 12px 30px -16px rgba(10, 124, 167, 0.6);
@@ -140,6 +155,188 @@ main {
 
 .button:hover {
     transform: translateY(-1px);
+    box-shadow: 0 14px 32px -14px rgba(47, 143, 88, 0.55);
+}
+
+.ghost {
+    background: transparent;
+    color: var(--accent);
+}
+
+.ghost:hover {
+    background: rgba(47, 143, 88, 0.12);
+}
+
+.hero__visual {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    position: relative;
+    isolation: isolate;
+}
+
+.profile-card {
+    background: #ffffff;
+    border: 1px solid rgba(149, 160, 168, 0.32);
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    box-shadow: 0 20px 60px -48px var(--shadow), 0 10px 30px -28px rgba(47, 143, 88, 0.18);
+    position: relative;
+    z-index: 1;
+}
+
+.profile-card img {
+    width: 104px;
+    height: 104px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 14px 34px -22px rgba(0, 0, 0, 0.2);
+}
+
+.profile-copy p {
+    margin: 0;
+    color: #1f2937;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.section {
+    margin-top: clamp(40px, 8vw, 80px);
+}
+
+.section__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.section__header h2 {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: clamp(22px, 2.5vw, 30px);
+    margin: 0;
+}
+
+.section__header p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.panel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.panel {
+    background: linear-gradient(145deg, #f4f5f7, #ffffff);
+    border: 1px solid #e5e7eb;
+    border-radius: var(--radius);
+    padding: 18px;
+    box-shadow: 0 18px 48px -48px var(--shadow);
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.panel h3 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.panel p {
+    margin: 0;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.links .link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+}
+
+.link-card {
+    border: 1px solid #e5e7eb;
+    border-radius: var(--radius);
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 14px;
+    align-items: center;
+    background: linear-gradient(120deg, rgba(47, 143, 88, 0.06), rgba(47, 143, 88, 0.03));
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px -32px rgba(0, 0, 0, 0.25);
+}
+
+.icon-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: #e6f4ec;
+    display: grid;
+    place-items: center;
+    color: var(--accent);
+    border: 1px solid rgba(47, 143, 88, 0.25);
+}
+
+.link-card h3 {
+    margin: 0 0 6px;
+    font-size: 1.05rem;
+}
+
+.link-card p {
+    margin: 0;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+footer {
+    margin-top: clamp(48px, 8vw, 96px);
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(to right,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            indigo,
+            violet) 1;
+    padding: 16px clamp(24px, 5vw, 48px) 24px;
+    background: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 14px;
+    font-size: 1.1rem;
+}
+
+.footer-note {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
     box-shadow: 0 14px 32px -14px rgba(10, 124, 167, 0.7);
 }
 
@@ -353,6 +550,7 @@ footer {
     }
 
     .profile-card {
+        align-items: center;
         grid-template-columns: 1fr;
         text-align: center;
     }
