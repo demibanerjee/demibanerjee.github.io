@@ -2,7 +2,10 @@
     --bg: #ffffff;
     --text: #1f1f1f;
     --muted: #4b5563;
+
+    
     --accent: #0a7ca7;
+
     --silver: #e5e7eb;
     --shadow: rgba(0, 0, 0, 0.04);
     --radius: 14px;
@@ -69,8 +72,10 @@ main {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+
     background: radial-gradient(circle at 20% 20%, #f7fafc, #ffffff 45%),
         linear-gradient(135deg, rgba(229, 231, 235, 0.5), rgba(255, 255, 255, 0.2));
+
     box-shadow: 0 24px 80px -48px var(--shadow), 0 2px 8px -6px var(--shadow);
 }
 
@@ -127,7 +132,10 @@ main {
 .button {
     background: var(--accent);
     color: #fff;
+
+    
     box-shadow: 0 12px 30px -16px rgba(10, 124, 167, 0.6);
+
 }
 
 .button:hover {
@@ -141,7 +149,10 @@ main {
 }
 
 .ghost:hover {
+
+  
     background: rgba(10, 124, 167, 0.08);
+
 }
 
 .hero__visual {
