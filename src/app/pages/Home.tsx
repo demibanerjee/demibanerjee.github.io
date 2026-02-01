@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { BookOpen, PenTool, Lightbulb, Trophy } from 'lucide-react';
 import { OpticsHeroCanvas } from '@/app/components/OpticsHeroCanvas';
 import { motion } from 'framer-motion';
-import profileImg from "figma:asset/3deb8636b2bb91c9376b149c9730cdaae902dd4b.png";
+import profileImg from "@/assets/hero.png";
 
 export const Home = () => {
   // Ref for the specific text element we want to glow
