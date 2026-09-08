@@ -1,3 +1,71 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+
+/* ===== Demi living chromatic theme ===== */
+:root {
+  --accent-h: 268;
+  --accent: hsl(var(--accent-h) 82% 54%);
+  --accent-deep: hsl(var(--accent-h) 78% 38%);
+  --accent-light: hsl(var(--accent-h) 92% 73%);
+  --accent-soft: hsl(var(--accent-h) 92% 96%);
+  --accent-border: hsl(var(--accent-h) 70% 84%);
+  --accent-glow: hsl(var(--accent-h) 88% 58% / .18);
+  --accent-glow-soft: hsl(var(--accent-h) 88% 64% / .10);
+  --theme-transition: 1200ms cubic-bezier(.2,.7,.2,1);
+}
+
+.accent-text { color: var(--accent); transition: color var(--theme-transition); }
+.accent-light-text { color: var(--accent-light); transition: color var(--theme-transition); }
+.accent-bg { background: var(--accent); transition: background var(--theme-transition); }
+.accent-soft-bg { background: var(--accent-soft); transition: background var(--theme-transition); }
+.accent-border { border-color: var(--accent-border); transition: border-color var(--theme-transition); }
+.accent-shadow { box-shadow: 0 14px 44px var(--accent-glow-soft); transition: box-shadow var(--theme-transition); }
+.accent-gradient {
+  background: linear-gradient(135deg,
+    hsl(var(--accent-h) 76% 45%),
+    hsl(calc(var(--accent-h) + 34) 74% 42%));
+  transition: background var(--theme-transition);
+}
+.dynamic-surface {
+  background:
+    radial-gradient(circle at 100% 0%, var(--accent-glow-soft), transparent 23%),
+    #f8fafc;
+  transition: background var(--theme-transition);
+}
+.dynamic-dark {
+  background:
+    radial-gradient(circle at 82% 5%, var(--accent-glow), transparent 28%),
+    radial-gradient(circle at 17% 12%, hsl(calc(var(--accent-h) + 58) 80% 58% / .10), transparent 23%),
+    #07101d;
+  transition: background var(--theme-transition);
+}
+.dynamic-chip {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  color: var(--accent-deep);
+  transition: all var(--theme-transition);
+}
+.dynamic-card {
+  transition: border-color var(--theme-transition), box-shadow .25s ease, transform .25s ease;
+}
+.dynamic-card:hover {
+  border-color: var(--accent-border);
+  box-shadow: 0 16px 42px var(--accent-glow-soft);
+  transform: translateY(-2px);
+}
+.dynamic-primary {
+  background: hsl(var(--accent-h) 78% 48% / .82);
+  border-color: hsl(var(--accent-h) 80% 66% / .50);
+  box-shadow: 0 0 28px var(--accent-glow);
+  transition: all var(--theme-transition);
+}
+.dynamic-primary:hover {
+  background: hsl(var(--accent-h) 78% 43% / .92);
+  box-shadow: 0 0 36px var(--accent-glow);
+}
+.reclaim-day {
+  background: hsl(var(--accent-h) 82% calc(98% - var(--v) * 40%));
+  transition: background var(--theme-transition), transform .18s ease;
+}
+.reclaim-day:hover { transform: scale(1.06); }
